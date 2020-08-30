@@ -7,6 +7,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" src="css/index.css">
+    <script defer src="index.js"></script>
     <title>Hello, world!</title>
   </head>
   <body>
@@ -18,13 +19,23 @@
         </div>
       </div>
 
-      <div class="todo-list-container bg-light">
-        <h2>My Todos</h2>
-        <ul id="tasks">
-        </ul>
+      <div class="container">
+      <div class="card" id="whole-card">
+        <h5 class="card-header text-center">Things To Focus On</h5>
+        <div class="card-body">
+          <h5 class="card-title">Task Description</h5>
+          <form id="create-task-form" action="#" method="post">
+            <label for="description">Task:</label>
+            <input type="text" id="description" name="description" placeholder="description">
+            <input type="submit" class="btn btn-primary value="Create New Task">
+          </form>
+          
+          <ul id="tasks"> 
+
+          </ul>         
+        </div>
       </div>
-
-
+    </div>
 
 
     <!-- Optional JavaScript -->
